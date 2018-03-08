@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { doRequest, Emiter } from '../../util/util';
+import { doRequest, Emiter } from '../../utils/utils';
 import PageContentTitle from '../PageContentTitle/PageContentTitle';
 import { message } from 'antd';
 import EchartsTest from '../PieChart/PieChart';

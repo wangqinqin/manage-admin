@@ -1,5 +1,5 @@
 import  React,  {Component}  from  'react';
-import  { doRequest,  isNull,    is50Long,  isMaxFixed2Num,  isBigger,  isZSNum,  is500Long,  is1000Long}  from  '../../util/util';
+import  { doRequest,  isNull,    is50Long,  isMaxFixed2Num,  isBigger,  isZSNum,  is500Long,  is1000Long}  from  '../../utils/utils';
 import  { Input,  message  ,  Modal,  Select,  Upload,  Icon,  Checkbox,  Row,  Col,  Radio  }  from  'antd';
 import './editModal.css'
 

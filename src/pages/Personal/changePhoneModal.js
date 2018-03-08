@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { doRequest, isPhone, isNull } from '../../util/util';
+import { doRequest, isPhone, isNull } from '../../utils/utils';
 import { Modal, Input, message  } from 'antd';
 
 export default class ChangePhoneModal extends Component {

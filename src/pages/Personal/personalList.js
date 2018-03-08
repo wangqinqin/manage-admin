@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import { Icon, message  } from 'antd';
-import { doRequest } from '../../util/util';
+import { doRequest } from '../../utils/utils';
 
 export default class PersonalList extends Component {
     constructor(props){

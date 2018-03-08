@@ -6,7 +6,7 @@ import QuerySelect from './querySelect';
 import ShowHistoryModal from './showHistoryModal';
 import ApprovedModal from "./approvedModal";
 import EditModal from "./editModal";
-import { doRequest } from '../../util/util';
+import { doRequest } from '../../utils/utils';
 import { withRouter } from 'react-router-dom';
 import { message } from 'antd';
 

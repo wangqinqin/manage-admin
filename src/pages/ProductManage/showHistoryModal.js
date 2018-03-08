@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import { Modal, Table, message } from 'antd';
-import { doRequest } from '../../util/util';
+import { doRequest } from '../../utils/utils';
 
 export default class ShowHistoryModal extends Component {
     constructor(props){

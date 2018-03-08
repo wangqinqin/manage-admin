@@ -1,6 +1,6 @@
 import  React,  {Component}  from  'react';
 import  {    Table,  message,  Popconfirm    }  from  'antd';
-import  {doRequest,  format,  Emiter  }  from  '../../util/util';
+import  {doRequest,  format,  Emiter  }  from  '../../utils/utils';
 
 
 export  default  class  QueryTable  extends  Component  {

@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { doRequest, Emiter, isNull } from '../../util/util';
+import { doRequest, Emiter, isNull } from '../../utils/utils';
 import {  Input, message , Modal, Radio } from 'antd';
 
 export default class ApprovedModal extends Component {

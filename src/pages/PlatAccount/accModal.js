@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { doRequest, is30Long, is50Long, isNull, isPhone, isPsd, isUserName } from '../../util/util';
+import { doRequest, is30Long, is50Long, isNull, isPhone, isPsd, isUserName } from '../../utils/utils';
 import {  Input, message , Modal, Radio, Checkbox, Row, Col  } from 'antd';
 import md5 from 'blueimp-md5';
 

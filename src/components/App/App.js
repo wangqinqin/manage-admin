@@ -5,7 +5,7 @@ import getRouter from 'router/router';
 import { withRouter } from 'react-router-dom';
 import './App.css';
 import { message } from 'antd';
-import { doRequest } from '../../util/util';
+import { doRequest } from '../../utils/utils';
 
 class App extends Component {
     constructor(props) {

@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {  Table, message, Button   } from 'antd';
-import {doRequest, format} from '../../util/util';
+import {doRequest, format} from '../../utils/utils';
 
 export default class QueryTable extends Component {
     constructor(props){
