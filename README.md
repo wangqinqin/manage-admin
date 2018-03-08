@@ -19,4 +19,4 @@
 1. /src/component |组件|
 2. /src/pages |页面js和css目录|
 3. /src/router |路由配置|
-4. /src/util |工具类函数|
+4. /src/utils |工具类函数|
