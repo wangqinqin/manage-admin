@@ -1,0 +1,48 @@
+/*header*/
+.header-container{
+    height: 45px;
+    line-height: 42px;
+    background-color: #202124;
+    width: 100%;
+    color:#8aa4af;
+    position: fixed;
+    top:0;
+    z-index:1000;
+}
+
+/*nav*/
+.nav-container{
+    position: relative;
+    width:150px;
+    height: 100%;
+    background-color: #202124;
+    float: left;
+    margin-left: -150px;
+    padding: 10px 0;
+    text-align: center;
+    z-index:999;
+}
+
+.nav-container >li{
+    height: 40px;
+    line-height: 40px;
+    margin: 10px 0;
+    transition: all .3s;
+    cursor:pointer;
+}
+.nav-container >li>a{
+    color:#8aa4af;
+    display: inline-block;
+    width: 100%;
+}
+.nav-container >li:hover{
+    background-color: #283A42;
+}
+.nav-container >li:hover a{
+    color:#fff;
+}
+.nav-container >li >a.active{
+    box-shadow: 6px 0 0 #35B2F9 inset;
+    color: #fff;
+}
+

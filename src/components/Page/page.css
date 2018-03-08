@@ -1,0 +1,22 @@
+/*page*/
+
+.ys-page-content{
+    height:100%;
+}
+.has-top{
+    padding-top: 155px;
+}
+.top-statistics{
+    height: 145px;
+    margin-top: -155px;
+}
+.statistics-one-part{
+    display: inline-block;
+    height: 90px;
+    text-align: center;
+    position: relative;
+    border-right: solid 1px #ddd;
+}
+.top-statistics .statistics-one-part:last-child{
+    border-right:none;
+}

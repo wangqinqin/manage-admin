@@ -1,0 +1,340 @@
+*{
+    margin: 0;
+    padding:0;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    font-family: "Microsoft YaHei";
+    color:#333;
+    font-size: 14px;
+    min-width: 1200px;
+    min-height: 600px;
+    background-color: #EDEDED;
+}
+a{
+    cursor: pointer;
+    color:inherit!important;
+    text-decoration: none!important;
+}
+.a-span>a{
+    color:#35B2F9!important;
+    transition: all .1s!important;
+}
+.a-span>a:hover{
+    text-decoration:underline!important;
+    color:#fbc200!important;
+}
+.a-div{
+    display: block;
+    color:#35B2F9!important;
+    transition: all .1s!important;
+}
+.a-div:hover{
+    text-decoration:underline!important;
+    color:#fbc200!important;
+}
+.info-container{
+    line-height: 40px;
+}
+.info-label{
+    display: inline-block;
+    width: 180px;
+    font-size: 14px;
+    color:#666;
+    text-align: left;
+}
+.number-container{
+    display: inline-block;
+    width: 120px;
+    font-size: 14px;
+    color:#333;
+    text-align: right;
+    padding-right: 30px;
+}
+/*ant nav*/
+.ant-menu-item,.ant-menu-submenu-title{
+    padding-left: 35px!important;
+    height: 45px!important;
+    line-height: 45px!important;
+    display: block;
+    overflow: visible!important;
+    text-overflow: clip!important;
+}
+.ant-menu-item a,.ant-menu-submenu-title span{
+    font-size: 14px;
+}
+.ant-menu-sub .ant-menu-item{
+    height: 35px!important;
+    line-height: 35px!important;
+}
+.ant-menu-sub .ant-menu-item a{
+    font-size: 12px;
+}
+.ant-menu-submenu .ant-menu-item{
+    padding-left: 60px!important;
+}
+.ant-menu-item .anticon  +a, .ant-menu-submenu-title .anticon  +a {
+    transition: opacity 0.3s cubic-bezier(0.645, 0.045, 0.355, 1), width 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    opacity: 1;
+}
+.ant-menu.ant-menu-dark .ant-menu-item-selected{
+    background-color: #31343B;
+}
+.ant-menu-dark, .ant-menu-dark .ant-menu-sub{
+    background-color: #3A424F;
+}
+.ant-menu-dark .ant-menu-inline.ant-menu-sub{
+    background-color: #363b45;
+}
+
+/*ant datepicker*/
+
+.ant-input{
+    vertical-align: middle!important;
+}
+
+textarea.ant-input{
+    vertical-align: top!important;
+}
+
+
+
+
+/*table*/
+
+.ant-table-thead > tr > th {
+    text-align: center!important;
+    color: #fff!important;
+    padding: 5px 8px!important;
+    font-size: 14px;
+}
+.ant-table-tbody > tr > td {
+    text-align: center!important;
+    padding: 8px 8px!important;
+}
+.ant-table-placeholder {
+    padding: 10px 8px!important;
+}
+.bomb-table table th {
+    /*background: #efefef!important;*/
+    padding: 5px 8px!important;
+    color:#333!important;
+}
+.ant-table-content{
+    padding-bottom:10px;
+}
+.bomb-table table td {
+    padding: 5px 8px!important;
+}
+/*分页*/
+
+.ant-pagination-item-active a,
+.ant-pagination-item-active:focus a,
+.ant-pagination-item-active:hover a {
+    color: #fff!important;
+}
+
+.ant-btn{
+    vertical-align: middle!important;
+}
+.ant-btn-primary {
+    vertical-align: middle;
+}
+
+.ant-checkbox-group {
+    width: 570px;
+    display: inline-block;
+    vertical-align: top;
+}
+.ant-col-8 {
+    width: 25%!important;
+    vertical-align: top;
+}
+.ant-upload-text{
+    margin-top: 5px ;
+}
+.anticon.anticon-plus{
+    margin-top: 15px ;
+}
+.ant-upload.ant-upload-select-picture-card {
+    width: 160px!important;
+    height: 80px!important;
+}
+.ant-upload.ant-upload-select-picture-card > .ant-upload {
+    padding: 5px!important;
+}
+.ant-radio-group {
+    vertical-align: middle;
+}
+.ant-radio-wrapper {
+    width: 75px;
+    margin-right: 0!important;
+}
+
+a.nav-a{
+    display: inline-block;
+    width: 180px;
+    z-index: 10000;
+    position: relative;
+    left: -57px;
+    padding-left: 62px!important;
+    vertical-align: middle;
+}
+ol,ul{
+    margin: 0;
+    list-style: none;
+}
+input,button{
+    outline: none;
+}
+.rel{
+    position: relative;
+}
+.none{
+    display: none!important;
+}
+.white-font{
+    color:#fff;
+}
+
+
+
+.whole-container{
+    width: 100%;
+    height: 100%;
+    /*min-height: 100%;*/
+}
+.page-container{
+    width: 100%;
+    height: 100%;
+    /*min-height: 100%;*/
+    padding-top: 47px;
+    padding-left: 180px;
+}
+.content-container{
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    padding:8px 10px 10px 10px;
+}
+
+
+.border-shine{
+    box-shadow: 2px 2px 1px 1px #ddd;
+    background-color: #fff;
+    padding: 15px 30px 10px 30px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.bomb-title{
+    display: inline-block;
+    width: 60px;
+    padding-left: 10px;
+    text-align: left;
+    position: relative;
+    vertical-align: middle;
+}
+.bomb-title-lg{
+    width: 75px;
+    padding-left: 13px;
+    font-size: 13px;
+    position: relative;
+}
+.bomb-title.must::before{
+    content: '*';
+    color:red;
+    position: absolute;
+    top:0;
+    left:3px;
+}
+.bomb-line-div{
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.bomb-block-div{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.icon-btn{
+    color:#35B2F9;
+    cursor:pointer;
+    padding: 0 5px;
+    vertical-align: middle;
+    transition: all .15s;
+}
+
+.icon-btn.header-icon{
+    color:#fff;
+    font-size: 18px;
+    padding: 5px 12px;
+}
+.icon-btn:hover{
+    opacity: 0.8;
+    color:#35B2F9;
+}
+.header-user{
+    color:#fff;
+    font-size: 15px;
+    padding: 5px 12px;
+}
+.add-table-btn{
+    position: absolute!important;
+    top: 15px!important;
+    right: 30px!important;
+}
+
+/*!*select condition*!*/
+.select-one-condition{
+    display: inline-block;
+    margin-right: 15px;
+    padding:2px 0;
+    line-height: 40px;
+}
+.quick-search-container{
+    display: block;
+}
+.select-one-condition.lg{
+}
+/*select title*/
+.select-title{
+    display: inline-block;
+    color:#666;
+    height: 35px;
+    line-height: 35px;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 10px;
+    margin-bottom:5px;
+}
+.select-title::before{
+    content: '';
+    display: block;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #35B2F9;
+    left: 0;
+    top: 15px;
+}
+.small-font{
+    color:#ccc;
+    font-size: 12px;
+    display: inline-block;
+}
+.ldt-nav-icon{
+    width: 14px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.back-light-table thead tr th{
+    background-color: #eee;
+
+}

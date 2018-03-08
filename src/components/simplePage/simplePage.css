@@ -1,0 +1,108 @@
+.simple-page {
+    display: block;
+    width: 100%;
+    min-width: 600px;
+    text-align: right;
+    line-height: 40px;
+    margin-top: 10px;
+}
+.pre-page-icon {
+    font-size: 18px;
+    vertical-align: text-bottom;
+    padding: 0 10px;
+    color: #666;
+}
+.next-page-icon {
+    font-size: 18px;
+    vertical-align: text-bottom;
+    padding: 0 10px;
+    color: #666;
+}
+.tcdNumber {
+    min-width: 20px;
+    display: inline-block;
+    text-align: center;
+    line-height: 20px;
+    padding: 0 3px;
+    color: #666;
+}
+.current {
+    min-width: 20px;
+    display: inline-block;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 10px;
+    background-color: #35B2F9;
+    padding: 0 3px;
+    color: #fff;
+}
+.page-input {
+    height: 20px;
+    width: 2.5em;
+    margin: 0 5px 0 10px;
+    text-align: center;
+    line-height: 20px;
+    outline: none;
+    vertical-align: text-bottom;
+}
+.page-jump-btn {
+    padding: 5px;
+    color: #666;
+}
+.simple-page-loading {
+    display: none;
+    color:#999;
+    margin-right: 10px;
+}
+.simple-page-loading > i {
+    margin-right: 10px;
+}
+.simple-page-pre-wrap {
+    position: relative;
+}
+.no-simple-page > .simple-page-pre-wrap > .simplePagePre,
+.no-simple-page > .simple-page-pre-wrap > .simplePageNext {
+    display: none !important;
+}
+.simplePagePre,.simplePageNext {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    width: 46px;
+    height: 100%;
+    transition: all .3s;
+    opacity: 0;
+}
+.simplePagePre:hover,.simplePageNext:hover {
+    opacity: .8;
+}
+.simplePagePre::before,.simplePageNext::before {
+    content: '\f104';
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 50px;
+    line-height: 80px;
+    text-align: center;
+    color:#fff;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    margin-top: -40px;
+    width: 100%;
+    background-color: rgba(0,0,0,.3);
+}
+.simplePagePre {
+    left: -20px;
+}
+.simplePageNext {
+    right: -20px;
+}
+.simplePageNext:hover {
+
+}
+.simplePagePre::before {
+    border-radius: 0 4px 4px 0;
+}
+.simplePageNext::before {
+    content: '\f105';
+    border-radius: 4px 0 0 4px;
+}

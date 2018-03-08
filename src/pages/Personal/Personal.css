@@ -1,0 +1,30 @@
+.personal-part{
+    margin-top: 15px;
+    margin-left: 60px;
+}
+
+.personal-part .select-title{
+    width: 100px;
+}
+.personal-part .could-edit {
+    display: inline-block;
+    width: 120px;
+}
+.personal-part .anticon.anticon-edit{
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.15s;
+}
+.personal-part .anticon.anticon-edit:hover{
+    color:#35B2F9;
+}
+.send-msg-btn{
+    position: absolute;
+    right: 30px;
+    line-height: 28PX;
+    padding: 0 5px;
+    color: #35B2F9!important;
+}
+.send-msg-btn.disabled{
+    color: #999!important;
+}

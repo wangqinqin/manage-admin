@@ -1,0 +1,931 @@
+const morkData = {
+    /*个人中心*/
+    '/account/getUserInfo': {
+        "code": "00",
+        "codeMsg": "查询成功",
+        'data': {
+            "id": -1,
+            "userName": "admin",
+            "realName": "test1",
+            "mobile": "18768181234",
+            "password": "b43bed16d5e6a0894102919fa27fbb9b",
+            "department": "888",
+            "position": "1361",
+            "status": 1,
+            "createTime": null,
+            "updateTime": "2018-02-12",
+            "lastLoginTime": "2018-03-08",
+            "menus": [{
+                "id": 1,
+                "menuName": "平台账号",
+                "menuUrl": null
+            }, {
+                "id": 3,
+                "menuName": "商品管理",
+                "menuUrl": null
+            }]
+        }
+    },
+    '/account/sendSmsCode':{
+        "code" : "00",
+        "codeMsg" : "验证码发送成功",
+        "data" : null
+    },
+    '/account/modifyMobile':{
+        "code" : "00",
+        "codeMsg" : "修改手机号成功",
+        "data" : null
+    },
+    '/account/resetPassword':{
+        "code" : "00",
+        "codeMsg" : "重置密码成功",
+        "data" : null
+    },
+    /*平台账号*/
+    '/account/getAdminUserList':{
+        "code" : "00",
+        "codeMsg" : "查询成功",
+        "data" : {
+            "total" : 22,
+            "totalPage" : 3,
+            "pageSize" : 10,
+            "pageNum" : 1,
+            "list" : [ {
+                "id" : 33,
+                "userName" : "sadasd4",
+                "realName" : "张三是",
+                "mobile" : "18712348856",
+                "password" : "24f41a7b54b3641c89673799f0a1e33d",
+                "department" : "1212",
+                "position" : "",
+                "status" : 1,
+                "createTime" : "2018-02-12",
+                "updateTime" : "2018-02-12",
+                "lastLoginTime" : null,
+                "menuList" : [ ]
+            }, {
+                "id" : 32,
+                "userName" : "1324544aa",
+                "realName" : "123456",
+                "mobile" : "13588257894",
+                "password" : "c998e8a0f5c948642e7fb5da945d1879",
+                "department" : "",
+                "position" : "安全部1",
+                "status" : 1,
+                "createTime" : "2018-02-12",
+                "updateTime" : "2018-02-12",
+                "lastLoginTime" : null,
+                "menuList" : [ 1, 5 ]
+            }, {
+                "id" : 31,
+                "userName" : "11232dkjfjf",
+                "realName" : "开 ",
+                "mobile" : "13587254569",
+                "password" : "878ad157df4a55619791c806c94559f8",
+                "department" : "",
+                "position" : "",
+                "status" : 1,
+                "createTime" : "2018-02-12",
+                "updateTime" : "2018-02-12",
+                "lastLoginTime" : null,
+                "menuList" : [ ]
+            }, {
+                "id" : 30,
+                "userName" : "12312311a",
+                "realName" : "123123",
+                "mobile" : "13545254569",
+                "password" : "c58f2d4d871e230a096adf6af3964721",
+                "department" : "1212",
+                "position" : "1212",
+                "status" : 1,
+                "createTime" : "2018-02-12",
+                "updateTime" : "2018-02-12",
+                "lastLoginTime" : null,
+                "menuList" : [ 3, 6 ]
+            }, {
+                "id" : 29,
+                "userName" : "sdasdf",
+                "realName" : "3213",
+                "mobile" : "18788775525",
+                "password" : "24f41a7b54b3641c89673799f0a1e33d",
+                "department" : "",
+                "position" : "",
+                "status" : 1,
+                "createTime" : "2018-02-12",
+                "updateTime" : "2018-02-12",
+                "lastLoginTime" : null,
+                "menuList" : [ ]
+            }, {
+                "id" : 28,
+                "userName" : "asddad",
+                "realName" : "213",
+                "mobile" : "18712995545",
+                "password" : "24f41a7b54b3641c89673799f0a1e33d",
+                "department" : "",
+                "position" : "",
+                "status" : 1,
+                "createTime" : "2018-02-12",
+                "updateTime" : "2018-02-12",
+                "lastLoginTime" : null,
+                "menuList" : [ ]
+            }, {
+                "id" : 27,
+                "userName" : "asdaf",
+                "realName" : "444",
+                "mobile" : "18712347911",
+                "password" : "24f41a7b54b3641c89673799f0a1e33d",
+                "department" : "",
+                "position" : "",
+                "status" : 1,
+                "createTime" : "2018-02-12",
+                "updateTime" : "2018-02-12",
+                "lastLoginTime" : null,
+                "menuList" : [ ]
+            }, {
+                "id" : 26,
+                "userName" : "wqqqqqqq",
+                "realName" : "12#123",
+                "mobile" : "13544254589",
+                "password" : "bf8de55a64647da5930e937a4a4464b3",
+                "department" : "121212",
+                "position" : "454546",
+                "status" : 1,
+                "createTime" : "2018-02-12",
+                "updateTime" : "2018-02-12",
+                "lastLoginTime" : null,
+                "menuList" : [ 2, 6 ]
+            }, {
+                "id" : 25,
+                "userName" : "sdasa",
+                "realName" : "12",
+                "mobile" : "18712918852",
+                "password" : "24f41a7b54b3641c89673799f0a1e33d",
+                "department" : "sad",
+                "position" : "asda",
+                "status" : 1,
+                "createTime" : "2018-02-12",
+                "updateTime" : "2018-02-12",
+                "lastLoginTime" : null,
+                "menuList" : [ 1 ]
+            }, {
+                "id" : 24,
+                "userName" : "212as",
+                "realName" : "1231",
+                "mobile" : "18712396851",
+                "password" : "e07162757e40021b02dc4ed46f2a7684",
+                "department" : "121",
+                "position" : "321312",
+                "status" : 1,
+                "createTime" : "2018-02-12",
+                "updateTime" : "2018-02-12",
+                "lastLoginTime" : null,
+                "menuList" : [ 5, 6, 3, 4 ]
+            } ,{
+                "id" : 23,
+                "userName" : "lisi",
+                "realName" : "李四",
+                "mobile" : "18712344552",
+                "password" : "24f41a7b54b3641c89673799f0a1e33d",
+                "department" : "ds",
+                "position" : "sd",
+                "status" : 1,
+                "createTime" : "2018-02-12",
+                "updateTime" : "2018-02-12",
+                "lastLoginTime" : null,
+                "menuList" : [ 5, 1, 2, 6, 3, 4 ]
+            }, {
+                "id" : 22,
+                "userName" : "wqq888",
+                "realName" : "wqq888",
+                "mobile" : "13594254569",
+                "password" : "d18777aac99c83f7ccd3ea8dbc87f26a",
+                "department" : "78454",
+                "position" : "1234",
+                "status" : 1,
+                "createTime" : "2018-02-11",
+                "updateTime" : "2018-02-12",
+                "lastLoginTime" : null,
+                "menuList" : [ 1, 5, 6 ]
+            }, {
+                "id" : 21,
+                "userName" : "wqq134",
+                "realName" : "wqq134",
+                "mobile" : "13599254569",
+                "password" : "6aa05b47875d3a9d176046543e8d8ca3",
+                "department" : "7894561",
+                "position" : "45647",
+                "status" : 1,
+                "createTime" : "2018-02-11",
+                "updateTime" : "2018-02-11",
+                "lastLoginTime" : null,
+                "menuList" : [ 1, 5 ]
+            }, {
+                "id" : 20,
+                "userName" : "321ads",
+                "realName" : "321118",
+                "mobile" : "18733354442",
+                "password" : "b43bed16d5e6a0894102919fa27fbb9b",
+                "department" : "33",
+                "position" : "33",
+                "status" : 1,
+                "createTime" : "2017-12-27",
+                "updateTime" : "2018-02-11",
+                "lastLoginTime" : null,
+                "menuList" : [ 1, 5, 2, 3, 6 ]
+            }, {
+                "id" : 19,
+                "userName" : "213213sd",
+                "realName" : "321",
+                "mobile" : "18542344745",
+                "password" : "83fa1ae2f090dbde13223e61b9a64601",
+                "department" : "",
+                "position" : "",
+                "status" : 1,
+                "createTime" : "2017-12-27",
+                "updateTime" : "2017-12-27",
+                "lastLoginTime" : null,
+                "menuList" : [ ]
+            }, {
+                "id" : 18,
+                "userName" : "sdasaA",
+                "realName" : "312111",
+                "mobile" : "18755344114",
+                "password" : "35eacb23062badd21dfb55e739c0a648",
+                "department" : "",
+                "position" : "",
+                "status" : 1,
+                "createTime" : "2017-12-27",
+                "updateTime" : "2017-12-27",
+                "lastLoginTime" : null,
+                "menuList" : [ ]
+            }, {
+                "id" : 17,
+                "userName" : "2312sqd",
+                "realName" : "999999",
+                "mobile" : "18791878112",
+                "password" : "e04f6feb447402d2e5465c7f12f9cac4",
+                "department" : "",
+                "position" : "",
+                "status" : 0,
+                "createTime" : "2017-12-27",
+                "updateTime" : "2017-12-27",
+                "lastLoginTime" : null,
+                "menuList" : [ ]
+            }, {
+                "id" : 16,
+                "userName" : "dasd",
+                "realName" : "多少案发111",
+                "mobile" : "18791345545",
+                "password" : "91de444c67d1bd78acc377f4ce8dbf1b",
+                "department" : "212",
+                "position" : "",
+                "status" : 0,
+                "createTime" : "2017-12-27",
+                "updateTime" : "2018-02-12",
+                "lastLoginTime" : null,
+                "menuList" : [ ]
+            }, {
+                "id" : 15,
+                "userName" : "lx",
+                "realName" : "3213",
+                "mobile" : "18754541124",
+                "password" : "343b1c4a3ea721b2d640fc8700db0f36",
+                "department" : "121212",
+                "position" : "",
+                "status" : 1,
+                "createTime" : "2017-12-27",
+                "updateTime" : "2018-02-12",
+                "lastLoginTime" : null,
+                "menuList" : [ ]
+            }, {
+                "id" : 14,
+                "userName" : "dasda1",
+                "realName" : "899677811",
+                "mobile" : "18742821235",
+                "password" : "b43bed16d5e6a0894102919fa27fbb9b",
+                "department" : "444444",
+                "position" : "23213213",
+                "status" : 1,
+                "createTime" : "2017-12-18",
+                "updateTime" : "2018-02-12",
+                "lastLoginTime" : null,
+                "menuList" : [ 1, 2, 6 ]
+            },{
+                "id" : 1,
+                "userName" : "tangzl",
+                "realName" : "汤忠亮1",
+                "mobile" : "18766382529",
+                "password" : "b43bed16d5e6a0894102919fa27fbb9b",
+                "department" : "安全部1",
+                "position" : "安全员",
+                "status" : 1,
+                "createTime" : "2017-12-18",
+                "updateTime" : "2018-02-12",
+                "lastLoginTime" : "2018-01-24",
+                "menuList" : [ 2, 6, 5 ]
+            }, {
+                "id" : -1,
+                "userName" : "admin",
+                "realName" : "test1",
+                "mobile" : "13587254569",
+                "password" : "b43bed16d5e6a0894102919fa27fbb9b",
+                "department" : "888",
+                "position" : "1361",
+                "status" : 1,
+                "createTime" : null,
+                "updateTime" : "2018-02-12",
+                "lastLoginTime" : "2018-03-08",
+                "menuList" : [ 1, 2, 3, 4, 5, 6 ]
+            }]
+        }
+    },
+    '/account/addOrModAdminUser':{
+        "code" : "00",
+        "codeMsg" : "添加账号成功",
+        "data" : null
+    },
+    '/account/getAdminMenuList':{
+        "code" : "00",
+        "codeMsg" : "查询成功",
+        "data" : [ {
+            "id" : 1,
+            "menuName" : "平台账号",
+            "menuUrl" : null
+        },{
+            "id" : 3,
+            "menuName" : "商品管理",
+            "menuUrl" : null
+        }]
+    },
+
+    /*商品管理*/
+    '/product/getDictProductCategory':{
+        "code" : "00",
+        "codeMsg" : "查询成功",
+        "data" : [ {
+            "id" : 1,
+            "name" : "Adidas品牌"
+        }, {
+            "id" : 2,
+            "name" : "Nike品牌"
+        }, {
+            "id" : 3,
+            "name" : "New Banlance品牌"
+        }, {
+            "id" : 4,
+            "name" : "Vans品牌"
+        }, {
+            "id" : 5,
+            "name" : "converse品牌"
+        }, {
+            "id" : 6,
+            "name" : "ASICS品牌"
+        }, {
+            "id" : 7,
+            "name" : "李宁品牌"
+        }, {
+            "id" : 8,
+            "name" : "361°品牌"
+        }, {
+            "id" : 9,
+            "name" : "其他品牌"
+        } ]
+    },
+    '/product/getDictArea':{
+        "code" : "00",
+        "codeMsg" : "查询成功",
+        "data" : [ {
+            "id" : 1,
+            "province" : "浙江",
+            "city" : "杭州",
+            "county" : "江干区"
+        }, {
+            "id" : 2,
+            "province" : "浙江",
+            "city" : "杭州",
+            "county" : "上城区"
+        }, {
+            "id" : 3,
+            "province" : "浙江",
+            "city" : "杭州",
+            "county" : "下城区"
+        }, {
+            "id" : 4,
+            "province" : "浙江",
+            "city" : "杭州",
+            "county" : "拱墅区"
+        }, {
+            "id" : 5,
+            "province" : "浙江",
+            "city" : "杭州",
+            "county" : "滨江区"
+        } ]
+    },
+    '/bank/findUseBankInfoByType':{
+        "code" : "00",
+        "codeMsg" : "查询成功",
+        "data" : [ {
+            "id" : 39,
+            "bankName" : "美美店铺",
+            "bankType" : "1"
+        }, {
+            "id" : 40,
+            "bankName" : "丽丽店铺",
+            "bankType" : "1"
+        }, {
+            "id" : 41,
+            "bankName" : "漂漂店铺",
+            "bankType" : "1"
+        }, {
+            "id" : 42,
+            "bankName" : "亮亮店铺",
+            "bankType" : "1"
+        }, {
+            "id" : 43,
+            "bankName" : "可可店铺",
+            "bankType" : "1"
+        }, {
+            "id" : 44,
+            "bankName" : "爱爱店铺",
+            "bankType" : "2"
+        }, {
+            "id" : 45,
+            "bankName" : "开开店铺",
+            "bankType" : "2"
+        }, {
+            "id" : 46,
+            "bankName" : "心心店铺",
+            "bankType" : "1"
+        }, {
+            "id" : 47,
+            "bankName" : "星星店铺",
+            "bankType" : "1"
+        }, {
+            "id" : 48,
+            "bankName" : "月月店铺",
+            "bankType" : "2"
+        }, {
+            "id" : 49,
+            "bankName" : "洋洋店铺",
+            "bankType" : "1"
+        }, {
+            "id" : 50,
+            "bankName" : "花花店铺",
+            "bankType" : "1"
+        } ]
+    },
+    '/product/searchProductList':{
+        "code" : "00",
+        "codeMsg" : "查询成功",
+        "data" : {
+            "total" : 12,
+            "totalPage" : 2,
+            "pageSize" : 10,
+            "pageNum" : 1,
+            "list" : [ {
+                "id" : 19,
+                "productName" : "男鞋1",
+                "status" : 4,
+                "bankName" : "开开店铺",
+                "bankId" : 45,
+                "totalCount" : 20,
+                "totalMoney" : 9000,
+                "submitTime" : "2018-01-29",
+                "submitDesc" : "商品上架",
+                "approveTime" : null,
+                "areaId" : [ 1, 2, 3, 4, 5 ],
+                "logoPath" : null,
+                "timeMin" : 5,
+                "timeMax" : 55,
+                "termMin" : 12,
+                "termMax" : 55,
+                "loanRangeType" : 1,
+                "loanMin" : 552.0,
+                "loanMax" : 3212.0,
+                "loanRangeDesc" : "",
+                "interestMin" : 5.6,
+                "interestMax" : 15.5,
+                "interestType" : 0,
+                "productBrief" : "123",
+                "productFeatures" : "3",
+                "requiredInfo" : "56",
+                "applyCondition" : "34",
+                "remark" : "78",
+                "productLabel" : "12",
+                "productUseId" : [ 1, 2, 3 ],
+                "productLoanTargetId" : [ 1, 2, 3 ],
+                "category" : [ 1, 6, 7 ]
+            }, {
+                "id" : 5,
+                "productName" : "男鞋2",
+                "status" : 4,
+                "bankName" : "漂漂店铺",
+                "bankId" : 41,
+                "totalCount" : 30,
+                "totalMoney" : 3000,
+                "submitTime" : "2018-03-01",
+                "submitDesc" : "",
+                "approveTime" : "2018-03-01",
+                "areaId" : [ 1 ],
+                "logoPath" : "http://localhost:8088/images/b8102efa10af48beb224513f9355b86a1515202351712.jpg",
+                "timeMin" : 3,
+                "timeMax" : 7,
+                "termMin" : 72,
+                "termMax" : 108,
+                "loanRangeType" : 1,
+                "loanMin" : 100.0,
+                "loanMax" : 500.0,
+                "loanRangeDesc" : "",
+                "interestMin" : 2.22,
+                "interestMax" : 8.88,
+                "interestType" : 1,
+                "productBrief" :"123456789",
+                "productFeatures" : "123456789",
+                "requiredInfo" : "123456789",
+                "applyCondition" : "123456789",
+                "remark" : "",
+                "productLabel" : "123456789",
+                "productUseId" : [ 1 ],
+                "productLoanTargetId" : [ 1, 2, 3 ],
+                "category" : [ 1, 7 ]
+            }, {
+                "id" : 4,
+                "productName" : "女鞋1",
+                "status" : 2,
+                "bankName" : "丽丽店铺",
+                "bankId" : 40,
+                "totalCount" : 15,
+                "totalMoney" : 12506,
+                "submitTime" : "2018-03-01",
+                "submitDesc" : "",
+                "approveTime" : "2018-03-01",
+                "areaId" : [ 2, 3 ],
+                "logoPath" : "http://localhost:8088/images/b10b102d3d3d48b29abb61356cda2f791515202333176.jpg",
+                "timeMin" : 5,
+                "timeMax" : 15,
+                "termMin" : 36,
+                "termMax" : 72,
+                "loanRangeType" : 2,
+                "loanMin" : null,
+                "loanMax" : null,
+                "loanRangeDesc" : "最高可按抵押物的100授信",
+                "interestMin" : 2.55,
+                "interestMax" : 5.55,
+                "interestType" : 1,
+                "productBrief" :"123456789",
+                "productFeatures" : "123456789",
+                "requiredInfo" : "123456789",
+                "applyCondition" : "123456789",
+                "remark" : "",
+                "productLabel" : "123456789",
+                "productUseId" : [ 1, 2 ],
+                "productLoanTargetId" : [ 1, 2, 3 ],
+                "category" : [ 1, 7, 8 ]
+            }, {
+                "id" : 32,
+                "productName" : "女鞋2",
+                "status" : 5,
+                "bankName" : "美美店铺",
+                "bankId" : 39,
+                "totalCount" : 0,
+                "totalMoney" : 0,
+                "submitTime" : null,
+                "submitDesc" : "",
+                "approveTime" : "2018-03-01",
+                "areaId" : [ 1, 4 ],
+                "logoPath" : "http://localhost:8088/images/8e834bb081d44f54bc8e93ec79d378061518401165424.png",
+                "timeMin" : 1,
+                "timeMax" : 2,
+                "termMin" : 1,
+                "termMax" : 2,
+                "loanRangeType" : 1,
+                "loanMin" : 1.0,
+                "loanMax" : 2.0,
+                "loanRangeDesc" : "",
+                "interestMin" : 1.0,
+                "interestMax" : 2.0,
+                "interestType" : 0,
+                "productBrief" : "1",
+                "productFeatures" : "1",
+                "requiredInfo" : "2",
+                "applyCondition" : "2",
+                "remark" : "2",
+                "productLabel" : "2",
+                "productUseId" : [ 1 ],
+                "productLoanTargetId" : [ 1, 3 ],
+                "category" : [ 1, 2, 3 ]
+            }, {
+                "id" : 26,
+                "productName" : "宝宝鞋1",
+                "status" : 3,
+                "bankName" : "丽丽店铺",
+                "bankId" : 40,
+                "totalCount" : 8,
+                "totalMoney" : 350,
+                "submitTime" : null,
+                "submitDesc" : "",
+                "approveTime" : "2018-03-01",
+                "areaId" : [ 1, 4 ],
+                "logoPath" : "http://localhost:8088/images/ee0f73ab07aa4c02b7e294b0c3e6983f1518398875803.png",
+                "timeMin" : 1,
+                "timeMax" : 11,
+                "termMin" : 1,
+                "termMax" : 11,
+                "loanRangeType" : 1,
+                "loanMin" : 1.0,
+                "loanMax" : 11.0,
+                "loanRangeDesc" : "",
+                "interestMin" : 1.0,
+                "interestMax" : 11.0,
+                "interestType" : 0,
+                "productBrief" : "11111111111111111",
+                "productFeatures" : "11111111111111111",
+                "requiredInfo" : "111111111111111",
+                "applyCondition" : "1111111111111111111111",
+                "remark" : "111111111111111",
+                "productLabel" : "1111111111111111",
+                "productUseId" : [ 1 ],
+                "productLoanTargetId" : [ 1 ],
+                "category" : [ 1, 2, 5 ]
+            }, {
+                "id" : 11,
+                "productName" : "宝宝鞋2",
+                "status" : 1,
+                "bankName" : "爱爱店铺",
+                "bankId" : 44,
+                "totalCount" : 11,
+                "totalMoney" : 1520,
+                "submitTime" : "2018-01-10",
+                "submitDesc" : "",
+                "approveTime" : "2018-03-01",
+                "areaId" : [ 3 ],
+                "logoPath" : "http://localhost:8088/images/233041ca4b9d487ab54738b813b7852f1516066421190.jpg",
+                "timeMin" : 1,
+                "timeMax" : 23,
+                "termMin" : 1,
+                "termMax" : 23,
+                "loanRangeType" : 1,
+                "loanMin" : 1.0,
+                "loanMax" : 23.0,
+                "loanRangeDesc" : "",
+                "interestMin" : 1.0,
+                "interestMax" : 23.0,
+                "interestType" : 0,
+                "productBrief" : "123",
+                "productFeatures" : "123",
+                "requiredInfo" : "1\n2\n3\n4",
+                "applyCondition" : "123\n123",
+                "remark" : "",
+                "productLabel" : "123",
+                "productUseId" : [ 3 ],
+                "productLoanTargetId" : [ 3 ],
+                "category" : [ 2, 3, 4, 6, 7, 8 ]
+            }, {
+                "id" : 29,
+                "productName" : "舞蹈鞋1",
+                "status" : 1,
+                "bankName" : "美美店铺",
+                "bankId" : 39,
+                "totalCount" : 3,
+                "totalMoney" : 190,
+                "submitTime" : null,
+                "submitDesc" : "",
+                "approveTime" : "2018-03-01",
+                "areaId" : [ 1, 4 ],
+                "logoPath" : null,
+                "timeMin" : 1,
+                "timeMax" : 2,
+                "termMin" : 1,
+                "termMax" : 2,
+                "loanRangeType" : 1,
+                "loanMin" : 1.0,
+                "loanMax" : 2.0,
+                "loanRangeDesc" : "",
+                "interestMin" : 1.0,
+                "interestMax" : 2.0,
+                "interestType" : 0,
+                "productBrief" : "呃呃呃",
+                "productFeatures" : "呃呃呃",
+                "requiredInfo" : "呃呃呃",
+                "applyCondition" : "呃呃呃",
+                "remark" : "呃呃呃",
+                "productLabel" : "呃呃呃",
+                "productUseId" : [ 1 ],
+                "productLoanTargetId" : [ 1, 3 ],
+                "category" : [ 1, 4, 8 ]
+            }, {
+                "id" : 27,
+                "productName" : "舞蹈鞋2",
+                "status" : 1,
+                "bankName" : "丽丽店铺",
+                "bankId" : 40,
+                "totalCount" : 300,
+                "totalMoney" : 152015,
+                "submitTime" : null,
+                "submitDesc" : "",
+                "approveTime" : "2018-03-01",
+                "areaId" : [ 1 ],
+                "logoPath" : "http://localhost:8088/images/b10b102d3d3d48b29abb61356cda2f791515202333176.jpg",
+                "timeMin" : 1,
+                "timeMax" : 11,
+                "termMin" : 1,
+                "termMax" : 11,
+                "loanRangeType" : 1,
+                "loanMin" : 1.0,
+                "loanMax" : 12.0,
+                "loanRangeDesc" : "",
+                "interestMin" : 1.0,
+                "interestMax" : 12.0,
+                "interestType" : 0,
+                "productBrief" : "11111111111111",
+                "productFeatures" : "111111111111111111",
+                "requiredInfo" : "1111111111111111111",
+                "applyCondition" : "1111111111111111",
+                "remark" : "111111111111111111111111",
+                "productLabel" : "1111111111111111111",
+                "productUseId" : [ 1 ],
+                "productLoanTargetId" : [ 1 ],
+                "category" : [ 1 ]
+            }, {
+                "id" : 22,
+                "productName" : "溜冰鞋1",
+                "status" : 1,
+                "bankName" : "美美店铺",
+                "bankId" : 39,
+                "totalCount" : 9,
+                "totalMoney" : 1209,
+                "submitTime" : null,
+                "submitDesc" : "",
+                "approveTime" : "2018-03-01",
+                "areaId" : [ 1, 4, 5 ],
+                "logoPath" : "http://localhost:8088/images/d161cbf3a2b0497e9c829642b0ee9dc41517555999943.jpg",
+                "timeMin" : 1,
+                "timeMax" : 5,
+                "termMin" : 1,
+                "termMax" : 3,
+                "loanRangeType" : 1,
+                "loanMin" : 1.0,
+                "loanMax" : 20.0,
+                "loanRangeDesc" : "",
+                "interestMin" : 1.0,
+                "interestMax" : 2.0,
+                "interestType" : 0,
+                "productBrief" : "测试测试",
+                "productFeatures" : "测试测试",
+                "requiredInfo" : "测试测试",
+                "applyCondition" : "测试测试",
+                "remark" : "测试测试",
+                "productLabel" : "测试测试",
+                "productUseId" : [ 1, 2, 3 ],
+                "productLoanTargetId" : [ 1, 2, 3 ],
+                "category" : [ 1, 2, 3, 4, 5, 6, 7, 8 ]
+            }, {
+                "id" : 30,
+                "productName" : "溜冰鞋2",
+                "status" : 1,
+                "bankName" : "美美店铺",
+                "bankId" : 39,
+                "totalCount" : 1,
+                "totalMoney" : 55,
+                "submitTime" : null,
+                "submitDesc" : "",
+                "approveTime" : "2018-03-01",
+                "areaId" : [ 1, 4 ],
+                "logoPath" : "http://localhost:8088/images/8e834bb081d44f54bc8e93ec79d378061518401165424.png",
+                "timeMin" : 1,
+                "timeMax" : 2,
+                "termMin" : 1,
+                "termMax" : 2,
+                "loanRangeType" : 1,
+                "loanMin" : 1.0,
+                "loanMax" : 2.0,
+                "loanRangeDesc" : "",
+                "interestMin" : 1.0,
+                "interestMax" : 2.0,
+                "interestType" : 0,
+                "productBrief" : "1",
+                "productFeatures" : "1",
+                "requiredInfo" : "1",
+                "applyCondition" : "1",
+                "remark" : "1",
+                "productLabel" : "1",
+                "productUseId" : [ 1 ],
+                "productLoanTargetId" : [ 1, 3 ],
+                "category" : [ 1, 4, 7 ]
+            },{
+                "id" : 12,
+                "productName" : "高跟鞋1",
+                "status" : 1,
+                "bankName" : "亮亮店铺",
+                "bankId" : 42,
+                "totalCount" : 6,
+                "totalMoney" : 650,
+                "submitTime" : "2018-01-09",
+                "submitDesc" : "",
+                "approveTime" : "2018-03-01",
+                "areaId" : [ 1 ],
+                "logoPath" : "http://localhost:8088/images/900fc73eeb694b898056fe6fabef1c641515482751561.jpg",
+                "timeMin" : 1,
+                "timeMax" : 11,
+                "termMin" : 1,
+                "termMax" : 11,
+                "loanRangeType" : 1,
+                "loanMin" : 1.0,
+                "loanMax" : 11.0,
+                "loanRangeDesc" : "",
+                "interestMin" : 1.0,
+                "interestMax" : 11.0,
+                "interestType" : 0,
+                "productBrief" : "1",
+                "productFeatures" : "1",
+                "requiredInfo" : "1",
+                "applyCondition" : "1",
+                "remark" : "1",
+                "productLabel" : "1",
+                "productUseId" : [ 1 ],
+                "productLoanTargetId" : [ 1, 3 ],
+                "category" : [ 4, 5, 6 ]
+            }, {
+                "id" : 20,
+                "productName" : "高跟鞋2",
+                "status" : 1,
+                "bankName" : "美美店铺",
+                "bankId" : 39,
+                "totalCount" : 77,
+                "totalMoney" : 10581,
+                "submitTime" : "2018-01-31",
+                "submitDesc" : "",
+                "approveTime" : "2018-03-01",
+                "areaId" : [ 1 ],
+                "logoPath" : null,
+                "timeMin" : 1,
+                "timeMax" : 10,
+                "termMin" : 1,
+                "termMax" : 10,
+                "loanRangeType" : 1,
+                "loanMin" : 231.0,
+                "loanMax" : 1003.0,
+                "loanRangeDesc" : "",
+                "interestMin" : 1.0,
+                "interestMax" : 10.0,
+                "interestType" : 0,
+                "productBrief" : "12",
+                "productFeatures" : "12",
+                "requiredInfo" : "33",
+                "applyCondition" : "22",
+                "remark" : "",
+                "productLabel" : "11",
+                "productUseId" : [ 1 ],
+                "productLoanTargetId" : [ 1 ],
+                "category" : [ 4, 1, 2 ]
+            }  ]
+        }
+    },
+    '/product/countProductNum':{
+        "code" : "00",
+        "codeMsg" : "查询成功",
+        "data" : [ {
+            "num" : 12,
+            "name" : "全部商品"
+        }, {
+            "num" : 3,
+            "name" : "待审核"
+        }, {
+            "num" : 7,
+            "name" : "已上架"
+        }, {
+            "num" : 1,
+            "name" : "已下架"
+        }, {
+            "num" : 1,
+            "name" : "已驳回"
+        } ]
+    },
+    '/product/getProOperatingHistory':{
+        "code" : "00",
+        "codeMsg" : "查询成功",
+        "data" : [ {
+            "id" : 178,
+            "productId" : 26,
+            "statusBefore" : 2,
+            "statusAfter" : 1,
+            "remark" : "同意上架",
+            "operatorId" : -1,
+            "submitTime" : null,
+            "approvalTime" : "2018-03-01",
+            "createTime" : "2018-03-01"
+        } ]
+    },
+    '/product/modProductInfo':{
+        "code" : "00",
+        "codeMsg" : "编辑成功",
+        "data" : null
+    },
+    '/product/changeStatus':{
+        "code" : "00",
+        "codeMsg" : "操作成功",
+        "data" : null
+    }
+};
+
+export default morkData;
