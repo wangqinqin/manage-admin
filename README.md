@@ -11,6 +11,12 @@
 1. IntelliJ IDEA
 
 ### 简介
-1. 这是一套后台商品管理平台的demo
+1. 这是一套纯前端的后台商品管理平台的demo
 2. 含基础的判断和权限，mock数据在data.js中
 3. 由于未使用localStorage/sessionStorage，所以涉及数据变动与后台交互部分未完善
+
+### 目录介绍
+|/src/component |组件|
+|/src/pages |页面js和css目录|
+|/src/router |路由配置|
+|/src/util |工具类函数|
