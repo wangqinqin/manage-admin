@@ -59,7 +59,7 @@ export  default  class  QueryTable  extends  Component  {
             },
             width:  '6%',
         },{
-            title:  <div>累计成交<br/><span className="small-font">(笔/万元)</span></div>,
+            title:  <div>累计成交<br/><span className="small-font">(笔/元)</span></div>,
             dataIndex:  '',
             render:  (text,  results)  =>  {
                 return  (
